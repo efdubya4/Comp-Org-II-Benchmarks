@@ -1,7 +1,9 @@
 import time
 
+#start timer
 start_time = time.time()
 
+#Benchmark 1 operations
 result = 0
 for i in range (10**10):
     result += i
@@ -9,3 +11,9 @@ for i in range (5*10**9):
     result *= i
 for i in range (2*10**9):
     result/= i
+
+#stop timer
+stop_time = time.time()
+
+execution_time = stop_time - start_time
+print("Integer operation benchmark execution time:", execution_time)
