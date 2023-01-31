@@ -9,8 +9,8 @@ for i in range (10**10):
     result += i
 for i in range (5*10**9):
     result *= i
-for i in range (2*10**9):
-    result/= i
+for i in range ((2*10**9)+1):
+    result /= i+1
 
 #stop timer
 stop_time = time.time()
