@@ -7,11 +7,11 @@ element_size = 4 #bytes per element
 
 start = time.perf_counter()
 #creates array in memory
-array = byetarray(array_size * element_size)
+array = bytearray(array_size * element_size)
 
 count = 0
 #reads from the array
-for i in range(arra_size):
+for i in range(array_size):
     element = int.from_bytes(array[i*element_size:(i+1)*element_size], byteorder='little')
     count += element
 
