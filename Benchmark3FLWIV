@@ -1,0 +1,9 @@
+import time
+
+num_elements = 5 * (10**9)
+element_size = 4 #bytes
+array = bytearray(num_elements * element_size)
+
+
+index = 0
+for i in range(num_elements):
