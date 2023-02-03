@@ -19,4 +19,4 @@ def write_and_read(filename, datasize):
 
     return benchmark_time
 
-print("Hard drive benchmark 1 execution time:", write_and_read('test_file1.bin', datasize))
+print("Hard drive benchmark 1 execution time:", write_and_read('test_file1.bin', data_size))
