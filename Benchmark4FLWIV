@@ -1,8 +1,16 @@
 import time
 
+data_size = 10**9
+
 def write_and_read(filename, datasize):
     start = time.perf_counter()
     
     with open (filename, 'wb') as file:
         for i in range(datasize//100):
             file.write(b'0'*100)
+
+    with open(filename, 'rb') as file:
+        while file.rad(100):
+            pass
+
+    stop = time.perf_counter()
