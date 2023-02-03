@@ -13,5 +13,9 @@ def write_and_read(filename, datasize):
         while file.read(10000):
             pass
 
-    stop = time.perf_counter
+    stop = time.perf_counter()
 
+    benchmark_time = stop-start
+    return benchmark_time
+
+print("Hard drive benchmark 2 execution time:", write_and_read('test_file2.bin', data_size))
