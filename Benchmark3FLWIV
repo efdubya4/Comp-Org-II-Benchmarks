@@ -17,4 +17,3 @@ for i in range(array_size):
 
 stop = time.perf_counter()
 print("Memory Benchmark execution time:", start-stop)
-
